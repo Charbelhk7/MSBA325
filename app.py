@@ -4,7 +4,7 @@ import plotly.express as px
 import pandas as pd
 import plotly.graph_objects as go
 
-df = pd.read_csv(r"C:\Users\habch\OneDrive\Desktop\Education Level.csv")
+df = pd.read_csv(r"Education Level.csv")
 
 # Add a new column that extracts the text after the last "/"
 df['Extracted_Text'] = df['refArea'].apply(lambda x: x.split('/')[-1])
